@@ -1,0 +1,17 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "S3 Bucket creation",
+  "Resources": {
+    "HelloBucket543": {
+       "Type":"AWS::S3::Bucket"
+	}
+  },
+  "Outputs": {
+    "S3Bucket": {
+      "Description": "S3 Bucket name of the newly created S3 Bucket",
+      "Value": {
+        "Ref": "HelloBucket543"
+      }
+    }
+  }
+}
