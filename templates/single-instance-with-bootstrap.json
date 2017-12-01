@@ -531,7 +531,7 @@
                 "yum update -y",
                 "yum -y install httpd",
 				"service httpd start",
-                "echo \"<html><body><h1>Welcome</h1>\" > /var/www/html/index.html",
+                "echo \"<html><body><h1>Welcome to the CloudFormation Demo</h1>\" > /var/www/html/index.html",
                 {
                   "Fn::Join": [
                     "",
