@@ -531,7 +531,7 @@
                 "yum update -y",
                 "yum -y install httpd",
 				"service httpd start",
-                "echo \"<html><body><h1>Welcome</h1>\" > /var/www/index.html",
+                "echo \"<html><body><h1>Welcome</h1>\" > /var/www/html/index.html",
                 {
                   "Fn::Join": [
                     "",
@@ -540,7 +540,7 @@
                       {
                         "Ref": "Environment"
                       },
-                      "</h2>\" >> /var/www/index.html"
+                      "</h2>\" >> /var/www/html/index.html"
                     ]
                   ]
                 },
@@ -552,11 +552,11 @@
                       {
                         "Ref": "Role"
                       },
-                      "</h2>\" >> /var/www/index.html"
+                      "</h2>\" >> /var/www/html/index.html"
                     ]
                   ]
                 },
-                "echo \"</body></html>\" >> /var/www/index.html",
+                "echo \"</body></html>\" >> /var/www/html/index.html",
 				"service httpd restart"
               ]
             ]
